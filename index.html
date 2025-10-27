@@ -226,10 +226,13 @@
             padding: 20px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
-            text-align: left;
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+
+        .box .text-content {
+            text-align: left;
         }
 
         .box h3 {
@@ -240,6 +243,7 @@
         .box p {
             margin: 5px 0 0;
             font-size: 1em;
+            text-align: left;
         }
 
         .box:hover {
@@ -415,8 +419,10 @@
       <h2>Members</h2>
       <div class="content-box">
         <div class="box" onclick="window.open('https://www.youtube.com/@CodekYT', '_blank');">
-          <h3>Ash</h3>
-          <p>Codek</p>
+          <div class="text-content">
+            <h3>Ash</h3>
+            <p>Codek</p>
+          </div>
           <img src="assets/ash.png">
         </div>
       </div>
