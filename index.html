@@ -227,13 +227,22 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
             text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
 
         .box img {
-          max-width: 100px;
-          height: auto;
-          border-radius: 10px;
-          align: left;
+            max-width: 100px;
+            height: auto;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        .box .text-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .box h3 {
@@ -414,8 +423,10 @@
       <div class="content-box">
         <div class="box" onclick="window.open('https://www.youtube.com/@CodekYT', '_blank');">
           <img src="assets/ash.png">
-          <h3>Ash</h3>
-          <p>Codek</p>
+          <div class="text-content">
+            <h3>Ash</h3>
+            <p>Codek</p>
+          </div>
         </div>
       </div>
       <br>
